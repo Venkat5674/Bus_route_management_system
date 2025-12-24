@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE hibernate-mapping PUBLIC 
+    "-//Hibernate/Hibernate Mapping DTD 3.0//EN"
+    "http://www.hibernate.org/dtd/hibernate-mapping-3.0.dtd">
+
+<hibernate-mapping package="com.busmgmt.entity">
+    <class name="Bus" table="BUS">
+        <id name="busId" column="BUS_ID">
+            <generator class="identity"/>
+        </id>
+        
+        <property name="busNumber" column="BUS_NUMBER"/>
+        <property name="busType" column="BUS_TYPE"/>
+        <property name="source" column="SOURCE"/>
+        <property name="destination" column="DESTINATION"/>
+        <property name="totalSeats" column="TOTAL_SEATS"/>
+        <property name="ticketPrice" column="TICKET_PRICE"/>
+        <property name="available" column="AVAILABLE"/>
+    </class>
+</hibernate-mapping>

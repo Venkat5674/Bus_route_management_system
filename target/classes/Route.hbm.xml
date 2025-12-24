@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE hibernate-mapping PUBLIC 
+    "-//Hibernate/Hibernate Mapping DTD 3.0//EN"
+    "http://www.hibernate.org/dtd/hibernate-mapping-3.0.dtd">
+
+<hibernate-mapping package="com.busmgmt.entity">
+    <class name="Route" table="ROUTE">
+        <id name="routeId" column="ROUTE_ID">
+            <generator class="identity"/>
+        </id>
+        
+        <property name="source" column="SOURCE"/>
+        <property name="destination" column="DESTINATION"/>
+        <property name="distance" column="DISTANCE"/>
+        <property name="duration" column="DURATION"/>
+        <property name="active" column="ACTIVE"/>
+    </class>
+</hibernate-mapping>
